@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #1a0530;
+} 
+#logo{
+    width: 100px;
+    height: 100px;
+}
+#logo img{
+    width: 100%;
+}
+
+#name{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.Heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sudoku_grid{
+    display: flex;
+    flex-direction: row;
+    max-width: 578px;
+    flex-wrap: wrap;
+    margin: 10px auto ;
+
+}
+
+.sudoku_grid div{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    box-sizing: border-box;
+    background-color: hsl(268, 75%, 9%);;
+    /* /*box-shadow: 0px 0px 3px 3px rgba(255, 229, 61, 0.80); */
+}
+.red-box{
+    background-color: #df08b1;
+    color: #df08b1;
+}
+
+.Buttons{   
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    margin-bottom: 40px;
+}
+
+#GetPuzzle,#SolvePuzzle{
+    display: inline-block;
+    text-decoration: none;
+    color: #f4ebeb;
+    font-weight: bold;
+    background-color: #7f3eb8;
+    padding: 10px 35px;
+    font-size: 24px;
+    /* border: 1px solid #03f699; */
+    /* box-shadow: inset 0px 1px 0px #ef0b0b; */
+    border-radius: 15px 15px 15px 15px ;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(236, 221, 113, 0.8);
+}
+body{
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+}
+.box1{
+    background-color: #06f3db;
+    border: 2px solid  rgb(230, 223, 223);
+}
+
+.box1:hover{
+    background-color: #f585c2;
+    color: rgb(239, 230, 230);
+}
+
+.box2{
+    background-color: #f3f92e;
+    border: 2px solid  rgb(232, 220, 220);
+}
+.box2:hover{
+    background-color: red;
+}
+
+.box3{
+    background-color: #028a0f;
+    border: 2px solid  rgb(239, 229, 229);
+}
+.box3:hover{
+    background-color: #f7a151;
+    color: rgb(234, 226, 226)
+}
+
+.bl{
+    border-left: 3px solid rgb(239, 234, 234);
+}
+
+.bb{
+    border-bottom: 3px solid rgb(237, 230, 230);
+}
+
+.br{
+    border-right: 3px solid rgb(241, 235, 235);
+}
+
+.bt{
+    border-top: 3px solid rgb(238, 231, 231);
+}
+#name{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+@media only screen and (max-width: 450px) {
+    #name{
+        font-size: 40px;
+    }
+    .sudoku_grid div{
+        width: 45px;
+        height: 42px;
+        font-size: 15px;
+    }
+  }
+@media only screen and (max-width: 391px) {
+    #name{
+        font-size: 30px;
+    }
+    .sudoku_grid div{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .sudoku_grid{
+        display: flex;
+        flex-direction: row;
+        max-width: 578px;
+        flex-wrap: wrap;
+        margin: 10px auto ;
+    
+    }
+    
+  }
